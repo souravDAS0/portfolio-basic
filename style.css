@@ -13,10 +13,15 @@ html {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+body{
+    width: 100%;
 }
 
 .rows {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
 }
 
@@ -71,6 +76,10 @@ html {
     border-radius: 50%;
     background: radial-gradient(323px at top, #cdf2ef 20%, #72b5bbd4 81%, var(--color-black) 130%);
     box-shadow: #04533f 5px 5px 10px 2px;
+}
+
+.about .left .img-container img {
+    object-fit: contain;
 }
 
 
@@ -275,7 +284,8 @@ html {
     font-size: 2rem;
     font-weight: 600;
 }
-.projects-container .project .project-name p{
+
+.projects-container .project .project-name p {
     font-size: 1rem;
     font-weight: 400;
     margin: 1rem;
@@ -296,22 +306,23 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin:1rem 0 ;
+    margin: 1rem 0;
 }
 
-.projects-container .project .project-link a{
+.projects-container .project .project-link a {
     width: 5%;
 }
 
 
 
-.projects-container .project .project-link a img{
+.projects-container .project .project-link a img {
     width: 100%;
 }
 
-.projects-container .project .project-link .external-link img{
+.projects-container .project .project-link .external-link img {
     width: 70%;
 }
+
 /* captions */
 
 .caption {
@@ -322,3 +333,141 @@ html {
     font-size: 5rem;
     font-weight: 500;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+    
+    .rows{
+        width: 100%;
+    }
+    .head h1 {
+        height: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about .left {
+        width: 100%;
+        /* height: 0; */
+        padding: 3rem 0;
+    }
+
+    .about .left .img-container {
+        width: 301px;
+        height: 310px;
+        background: radial-gradient(187px at top, #cdf2ef 20%, #72b5bbd4 81%, var(--color-black) 130%);
+    }
+
+    .about .left .img-container img {
+        width: 75%;
+    }
+
+    .about .right {
+        width: 80%;
+        padding: 0 1rem;
+    }
+
+    .about .right .name {
+        padding: 0;
+    }
+
+    .about .right .name h3 {
+        font-size: 2rem;
+    }
+
+    .about .right .name h1 {
+        font-size: 3rem;
+    }
+
+    .about .right p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+
+    .skills .icons-container .icons {
+        width: 5rem;
+        height: 7rem;
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--box-border-color);
+        border-radius: 1rem;
+        background: var(--box-bg-color);
+        box-shadow: var(--box-shadow-color) 3px 5px 0px 0px;
+    }
+
+    .education .edu-container .edu {
+        width: 100%;
+        align-items: center;
+        border: 3px solid var(--box-border-color);
+        flex-direction: column;
+    }
+
+    .education .edu-container .edu .edu-icon {
+        width: 50%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .education .edu-container .edu .edu-details {
+        margin: 0;
+    }
+
+    .education .edu-container .edu .edu-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .education .edu-container .edu .edu-details p {
+        font-size: 1.1rem;
+
+    }
+
+    .education .edu-container .edu .edu-details h5 {
+        font-size: 1.4rem;
+    }
+
+    .projects-container {
+        margin: 1rem 0;
+    }
+
+    .projects-container .project {
+        width: 100%;
+        border-width: 3px;
+    }
+
+    .projects-container .project .project-name {
+        align-items: flex-start;
+    }
+
+    .projects-container .project .project-name h3 {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+    }
+
+    .projects-container .project .project-ss {
+        margin: 0.2rem;
+        border: 0.5px solid var(--color-blue);
+        box-shadow: #04533f 2px 2px 5px 0px;
+    }
+
+
+    .caption {
+        margin: 2rem 0;
+    }
+
+    .caption h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
+
