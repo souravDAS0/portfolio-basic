@@ -16,7 +16,7 @@ html {
     /* overflow: hidden; */
 }
 
-body{
+body {
     width: 100%;
 }
 
@@ -337,13 +337,14 @@ body{
 
 
 @media screen and (max-width: 600px) {
-    body{
+    body {
         width: 100%;
     }
-    
-    .rows{
+
+    .rows {
         width: 100%;
     }
+
     .head h1 {
         height: 3rem;
         font-size: 2.5rem;
@@ -371,8 +372,8 @@ body{
     }
 
     .about .right {
-        width: 80%;
-        padding: 0 1rem;
+        width: 100%;
+        padding: 0 2rem;
     }
 
     .about .right .name {
@@ -392,6 +393,9 @@ body{
         line-height: 1.8rem;
     }
 
+    .skills .icons-container {
+        width: 100%;
+    }
 
     .skills .icons-container .icons {
         width: 5rem;
@@ -434,6 +438,7 @@ body{
 
     .education .edu-container .edu .edu-details h5 {
         font-size: 1.4rem;
+        margin: 1rem 0;
     }
 
     .projects-container {
@@ -470,4 +475,3 @@ body{
         font-weight: 500;
     }
 }
-
